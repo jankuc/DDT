@@ -1,0 +1,15 @@
+
+proc se neustale cykli kmeans?
+ - protoze vychazi nekonecna vzdalenost, protoze: 
+proc to vadi naslednemu histogramu, pripadne divergenci?
+ - histogram nesmi mit na zadnem miste nuly, protoze se pak dela 
+	log[ H1^a * H2^(1-a)  ]
+		pokud je a > 1 => 0^e, e < 0 => 1/0
+		
+=> pocitat divergenci jen na supportu
+
+pro histogramy s nejstejnymi chlivky je potreba pak najit spolecne deleni.
+
+histogramy nedelit jen poctem dat, ale poctem dat nasobenym sirkou chlivku.
+Nasledne pak  sum[(sumou vah dat v chlivku)*sirka chlivku]
+

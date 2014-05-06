@@ -1,0 +1,26 @@
+
+
+
+1 - find node for division
+
+2 - divide Node for Division (ND)
+
+
+Dividing of ND:
+    X in R(n, d)
+    
+    X = Transform(X)  #########   PCA, PCAcov, uniform  -> X in R(n,d) n = 5000, d = 35
+        
+    Choice of number of browsed variables (d1 <= d) -> X in R(n, d1) d1 = 10 (variable ranking, variable scoring, ...)
+
+    for all combinations of few (2-3) variables from 15   X2
+        X2 = Transform(X2)
+        X2a, X2b = Cluster(X2) (k-means)
+        count divergences
+
+    find best division
+    divide
+    
+
+
+ 
